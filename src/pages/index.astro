@@ -1,0 +1,129 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48 64x64" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="BurritoBear — coming to NYC, Fall 2026." />
+    <title>Coming Soon | BurritoBear</title>
+    <style>
+      @font-face {
+        font-family: "Arial Rounded MT Bold";
+        src: url("https://framerusercontent.com/assets/fHsWfHwTENWdcAAAmGRGXFRi8q0.woff2") format("woff2");
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Arial Rounded MT";
+        src: url("https://framerusercontent.com/assets/hg7D9AZ28jfQPmsy5H6jJ8gwRFA.woff2") format("woff2");
+        font-display: swap;
+      }
+
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html, body {
+        height: 100%;
+      }
+
+      body {
+        background: #fff;
+        color: #2d3142;
+        font-family: "Arial Rounded MT", "Arial Rounded MT Bold", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1.5rem;
+        gap: 1.25rem;
+      }
+
+      .tagline {
+        font-family: "Arial Rounded MT", Arial, sans-serif;
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #4f5d75;
+        text-align: center;
+      }
+
+      .video-wrapper {
+        width: 100%;
+        max-width: 860px;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      video {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 1.5rem 3rem;
+      }
+
+      .contact-btn {
+        display: inline-block;
+        font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+        font-size: 0.75rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #fff;
+        background: #ed1c23;
+        text-decoration: none;
+        padding: 0.85rem 2.5rem;
+        border-radius: 100px;
+        transition: background 0.2s ease, transform 0.15s ease;
+      }
+
+      .contact-btn:hover {
+        background: #c8151b;
+        transform: translateY(-1px);
+      }
+
+      .contact-btn:active {
+        transform: translateY(0);
+      }
+
+      @media (min-width: 768px) {
+        footer {
+          padding-bottom: 4rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="video-wrapper">
+        <video autoplay muted loop playsinline preload="auto">
+          <source src="/bearhomepage.webm" type="video/webm" />
+          <source src="/bearhomepage.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <p class="tagline">Coming to NYC This Fall</p>
+    </main>
+
+    <footer>
+      <a href="mailto:hello@burritobear.com" class="contact-btn">Contact Us</a>
+    </footer>
+  </body>
+</html>
