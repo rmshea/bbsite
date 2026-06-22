@@ -1,12 +1,8 @@
 {
 	"compatibility_date": "2026-06-08",
 	"compatibility_flags": ["global_fetch_strictly_public"],
-	"name": "shining-singularity",
-	"main": "@astrojs/cloudflare/entrypoints/server",
-	"assets": {
-		"directory": "./dist",
-		"binding": "ASSETS"
-	},
+	"name": "burritobear",
+	"pages_build_output_dir": "./dist/client",
 	"observability": {
 		"enabled": true
 	}
